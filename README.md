@@ -1,4 +1,4 @@
-# sd_webui
+# sd_webui 食用指南
 介于国内没有完善的stable-diffusion-webui食用指南 踩过一部份坑后 决定自己整理一个.
 
 具体安装教程 官方已经说明的很清楚了 就不在这里赘述.
