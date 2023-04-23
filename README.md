@@ -233,8 +233,8 @@ Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越�
 如果食用教程时发现有问题的地方或者有任何建议 欢迎提Issue 我有看到都会回复的；
 
 如果觉得这篇教程帮助到了你 可以请我吃根棒棒糖🍭；  
-<img src="https://user-images.githubusercontent.com/49552459/233831831-d98d3881-4cb7-4450-a395-a4af4898efa2.jpeg" width="200px" height="320px" />
-<img src="https://user-images.githubusercontent.com/49552459/233831832-5a77ce53-32a2-4a3b-98f0-107aa4a648a7.jpeg" width="220px" height="380px" />
+<img src="https://user-images.githubusercontent.com/49552459/233831831-d98d3881-4cb7-4450-a395-a4af4898efa2.jpeg" width="240px" height="320px" />
+<img src="https://user-images.githubusercontent.com/49552459/233831832-5a77ce53-32a2-4a3b-98f0-107aa4a648a7.jpeg" width="240px" height="380px" />
 
 
 
