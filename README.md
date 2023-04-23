@@ -22,7 +22,8 @@ https://github.com/Coyote-A/ultimate-upscale-for-automatic1111
 ps：教程底下都有详细安装说明 我就不贴出来了  
 
 插件安装完毕后 算是可以真正开始起步了；  
-win cmd/mac ter 启动项目后 访问 http://127.0.0.1:7860/ 进入界面；  
+win cmd/mac ter 输入命令 webui.bat\/.webui.sh
+启动项目后 访问 http://127.0.0.1:7860/ 进入界面；  
 
 原始界面  
 <img width="1337" alt="image" src="https://user-images.githubusercontent.com/49552459/233818016-5156d616-a21c-48e4-be72-b68498edcfcd.png">
