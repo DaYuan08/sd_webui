@@ -18,7 +18,7 @@ https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 https://github.com/adieyal/sd-dynamic-prompts  
 https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor  
 https://github.com/Coyote-A/ultimate-upscale-for-automatic1111  
-ps：教程底下都有详细说明  
+ps：教程底下都有详细安装说明 我就不贴出来了  
 
 插件安装完毕后 算是可以真正开始起步了；  
 win cmd/mac ter 启动项目后 访问 http://127.0.0.1:7860/ 进入界面；  
@@ -213,6 +213,18 @@ Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越�
 
 还没研究出个所以然；
 
+# 已有作品食用指南
+
+以下以 https://civitai.com/ 的作品为例；
+
+进入网站后 选择喜欢的模型 需要关注的是 模型的Type；  
+下载的时候要根据不同的类型放置在不同的目录底下 上文[模型一般分俩种类型](#模型一般分俩种类型)有提到；   
+
+<img width="1726" alt="image" src="https://user-images.githubusercontent.com/49552459/233831051-04610d43-913f-42fa-9f6f-98d307b62aad.png">
+
+拉到页面底下 会有该模型的其他作者的作品 点开一个进入到详情页；  
+详情页拉到底部 会有这张图片生成的参数 一一对应copy到你的webui下面 点击Generate(生成）就可以静候佳音了；  
+<img width="1727" alt="image" src="https://user-images.githubusercontent.com/49552459/233831410-42f40b12-c011-4bf0-ac34-5037ee33ba6d.png">
 
 
 
