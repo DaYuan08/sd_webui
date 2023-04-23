@@ -227,5 +227,11 @@ Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越�
 <img width="1727" alt="image" src="https://user-images.githubusercontent.com/49552459/233831410-42f40b12-c011-4bf0-ac34-5037ee33ba6d.png">
 
 
+# 总结
+
+目前整理的大概就是这些 后续会继续完善教程；  
+有问题可以在本项目底下提issues 我有看到都会回复的；
+
+如果觉得这篇教程帮助到了你 可以请我吃根棒棒糖🍭；
 
 
