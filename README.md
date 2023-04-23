@@ -28,7 +28,8 @@ win cmd/mac ter 输入命令 webui.bat\/.webui.sh
 原始界面  
 <img width="1337" alt="image" src="https://user-images.githubusercontent.com/49552459/233818016-5156d616-a21c-48e4-be72-b68498edcfcd.png">
 
-安装汉化插件后 在选项栏 Settings - User interface - Localization (requires restart) 切换语言（需要重启：拉到顶部依次点击按钮 Apply settings - Reload UI；  
+安装汉化插件后 在选项栏 Settings - User interface - Localization (requires restart) 切换语言;  
+切换后需要重启 拉到顶部依次点击按钮 Apply settings - Reload UI；  
 
 切换成功后  
 <img width="1728" alt="image" src="https://user-images.githubusercontent.com/49552459/233818332-519e8215-a84d-451a-9b1b-0d36aab4f2ab.png">
