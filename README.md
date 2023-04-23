@@ -12,9 +12,9 @@
 教程设备：MacBook Pro M1 Pro; OS版本：13.3.1
 
 推荐插件：
-https://github.com/VinsonLaro/stable-diffusion-webui-chinese
-https://github.com/Mikubill/sd-webui-controlnet
-https://github.com/fkunn1326/openpose-editor
+https://github.com/VinsonLaro/stable-diffusion-webui-chinese \n
+https://github.com/Mikubill/sd-webui-controlnet \n
+https://github.com/fkunn1326/openpose-editor \n
 https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111
 https://github.com/adieyal/sd-dynamic-prompts
 https://github.com/toshiaki1729/stable-diffusion-webui-dataset-tag-editor
