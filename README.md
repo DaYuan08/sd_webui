@@ -8,7 +8,8 @@
 
 # 正片开始
 
-教程设备：MacBook Pro M1 Pro; OS版本：13.3.1
+教程设备：MacBook Pro M1 Pro; OS版本：13.3.1  
+win和mac只有安装环节的区别 食用方式还是一样的；
 
 推荐插件：   
 https://github.com/VinsonLaro/stable-diffusion-webui-chinese  
