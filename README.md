@@ -56,20 +56,64 @@ Extensions：扩展 插件管理页面；
 推荐模型库：https://civitai.com/  
 
 模型一般分俩种类型：  
+
 1 是 CHECKPOINT MERGE（合并模型）  
-CM模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/Stable-diffusion 底下；  
+CM模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/Stable-diffusion 底下；
+
 页面第一个选择框 选择的就是合并模型；  
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/49552459/233818876-35ec72f4-649c-4ec7-be45-2088fab60d11.png">
 
 2 是 LORA （训练模型）  
 LORA模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/Lora 底下;  
+
 在txt2img/img2img选项下 Prompt（提示词）框里使用以下语法食用：  
+
 \<lora:lora_name:num\>   
 lora_name：下载的lora模型名称；  
 num：模型占比，适用于使用多个lora模型时 调整单个模型的占比 数字0.1到1;  
+
 如图：  
 <img width="968" alt="image" src="https://user-images.githubusercontent.com/49552459/233819208-c1fb23fe-1c53-4290-85d8-63caa0fdaf8a.png">
 
-选择
+选择好模型后 就要开始填写Prompt(提示词了 下文以 txt2img + civitai 的作品为例；
+
+# txt2img
+
+Prompt（提示词：  
+
+简单理解就是 用文字描述你想要生成的图片；  
+输入语言为英语 支持用口语化的形式描述 不过一般还是用一个个的关键字(逗号隔开)去描述；
+
+语法：
+
+1.分隔：  
+多个关键字之间 需要用英文符号逗号‘,’分隔开 逗号前后允许空格和换行的存在；  
+eg：1girl, long hair, smile, full body, long legs, (1个女孩，长发，微笑，全身，长腿）
 
 
+2.混合：  
+多个关键字之间用英文符号'|'分隔 可以实现多个要素 需要注意混合比例；  
+eg：1girl, long hair, pink | purple hair, (1个女孩，长发，粉色和紫色混合头发）
+
+3.增强/减弱：  
+分俩种写法
+1. (提示词:权重数值)
+  + 数值从0.1 ~ 100 默认是1 低于1就是减弱 高于1就是加强
+  + eg：(beautiful eyes:1.2),(light smile:1.8)
+2. (((提示词))) / [提示词]
+  + 倍数 一层阔号代表增强1.1倍 俩层就是1.1\*1.1=1.21倍 依次类推
+  + eg：(((glasses))),\[long hair\]
+
+4.渐变：  
+我的理解是 先按语法第一个提示词生成主体 再向第二个提示词进行过渡；  
+语法：\[提示词1:提示词2:num\]  
+
+num：
+  + 数字大于1时，表示第‘num‘步之前按‘提示词1’生成 第‘num‘步后 按‘提示词2’叠加效果；  
+  + eg：1girl, long hair, [pink:purple:10] hair,    
+  + 数字小于1时，表示总步数的百分之’num‘按’提示词1‘生成 之后按‘提示词2’叠加效果；  
+  + 1girl, long hair, [pink:purple:0.5] hair,  
+ps：这里的步数指 Sampling steps 采样步数  
+
+5.交替  
+轮流替换使用提示词
