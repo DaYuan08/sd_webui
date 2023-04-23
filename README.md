@@ -116,4 +116,5 @@ num：
 ps：这里的步数指 Sampling steps 采样步数  
 
 5.交替  
-轮流替换使用提示词
+轮流替换使用提示词；  
+eg：\[cow|horse\] in a field,（牛马混合物 具体解释就是 先按
