@@ -31,7 +31,7 @@ win cmd/mac ter 启动项目后 访问 http://127.0.0.1:7860/ 进入界面；
 切换成功后  
 <img width="1728" alt="image" src="https://user-images.githubusercontent.com/49552459/233818332-519e8215-a84d-451a-9b1b-0d36aab4f2ab.png">
 
-选项介绍：
+#### 选项介绍：
 
 txt2img：文生图 根据文字描述生成图片；
 
@@ -51,19 +51,19 @@ Extensions：扩展 插件管理页面；
 
 # 模型
 
-由界面第一个选项得知 生成图片需要基于模型 所以下文是模型食用教程；  
+生成图片需要基于模型，可以从已有模型库下载；    
 官方模型库：https://huggingface.co/models  
 推荐模型库：https://civitai.com/  
 
-模型一般分俩种类型：  
+#### 模型一般分俩种类型：  
 
-1 是 CHECKPOINT MERGE（合并模型）  
+##### 1 是 CHECKPOINT MERGE（合并模型）  
 CM模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/Stable-diffusion 底下；
 
 页面第一个选择框 选择的就是合并模型；  
 <img width="424" alt="image" src="https://user-images.githubusercontent.com/49552459/233818876-35ec72f4-649c-4ec7-be45-2088fab60d11.png">
 
-2 是 LORA （训练模型）  
+##### 2 是 LORA （训练模型）  
 LORA模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/Lora 底下;  
 
 在txt2img/img2img选项下 Prompt（提示词）框里使用以下语法食用：  
@@ -79,12 +79,12 @@ num：模型占比，适用于使用多个lora模型时 调整单个模型的占
 
 # txt2img
 
-Prompt（提示词：  
+#### Prompt(提示词)：  
 
-简单理解就是 用文字描述你想要生成的图片；  
+用文字描述你想要生成的图片；  
 输入语言为英语 支持用口语化的形式描述 不过一般还是用一个个的关键字(逗号隔开)去描述；
 
-语法：
+#### 语法：
 
 1.分隔：  
 多个关键字之间 需要用英文符号逗号‘,’分隔开 逗号前后允许空格和换行的存在；  
@@ -117,4 +117,87 @@ ps：这里的步数指 Sampling steps 采样步数
 
 5.交替  
 轮流替换使用提示词；  
-eg：\[cow|horse\] in a field,（牛马混合物 具体解释就是 先按
+语法：\[提示词1|提示词2\] in a field  
+eg：\[cow|horse\] in a field,（牛马混合物 简单解释就是 先按牛生成 再按马生成 实测生成的是牛头马身hhh）   
+
+#### 范例：  
+
+提示词有推荐按以下格式去填写 有一定的先后顺序 方便调整；
+
+画质词 > 风格词 > 主体 > 主题外表(从上到下）> 主体情绪 > 主体姿势（从上到下）> 背景词 > 其他描述
+  + 画质词：低/中/高 等；
+  + 风格词：写实/动漫/插画/油画 等；
+  + 主体：1任何主体 1代表1个主体 可以是人 可以是动物 等；
+  + 主体外表：
+    + 发型：长/短发 刘海 高/低单/双马尾 卷发；
+    + 发色：任意颜色 头顶发色 挑染发色；
+    + 衣服：任何衣物 可以指定颜色 状态；
+    + 头部：头部饰品 帽子 发夹；
+    + 眼睛：颜色 美瞳；
+    + 颈部：颈部饰品；
+    + 胸部：大中小；
+    + 腹部：是否露出腹部 肚脐；
+    + 臀部：大中小；
+    + 腿部：长短粗细 鞋类；
+  + 主体情绪：任何情绪 可以加修饰词 笑 -> 微笑；
+  + 主体姿势：
+    + 基本动作：走 跑 站 坐 蹲 趴 跪；
+    + 头部动作：低头 仰头 歪头 面向观众 回头看；
+    + 手部动作：举手 放置部位；
+    + 腰部动作：弯腰；
+    + 腿部动作：交叉腿 盘腿 M形开腿 二郎腿 小日子的跪坐也可以；
+    + 其他动作：战斗姿态 背对背；
+  + 背景词：
+    + 场景：室内/外 城市 郊外；
+    + 地点：办公室 咖啡厅 电影院 教学楼；
+    + 天气：任何天气 可以带强度 大太阳 暴雨；
+  + 其他描述：细节描述词
+
+eg：high quality,（高质量的）realistic,（写实的）1girl, short hair, brown hair, white shirt, brown eyes, heart necklace, breasts, abdomen, ass, legs, high heels, （1个女孩，棕色短发，白色衬衫，棕色眼睛，心形项链，胸部，腹部，臀部，腿，高跟鞋）light smile,（微笑）sitting, looking at viewer, hand on hip,(坐姿，看向观众，单手叉腰）outdoors, cityscape,（在室外，城市背景） 
+
+#### Negative prompt(反向提示词)：  
+
+用文字描述不想在图片中出现的东西；（具体食用方式 还在研究）
+
+1. 对图片进行去噪处理，使其看起来更像你的提示词；  
+2. 对图片进行去噪处理，使其看起来更像你的反向提示词（无条件条件）；  
+3. 观察这两者之间的差异，并利用它来产生一组对噪声图片的改变；  
+4. 尝试将最终结果移向前者而远离后者；  
+5. 一个相对比较通用的负面提示词设置；  
+
+部分反向提示词：worst quality,low quality,normal quality,bad hands,text,error,missing fingers,unclear eyes,fewer digits,cropped,jpeg artifacts,Humpbacked,signature,watermark,blurry,missing arms,long neck,missing limb,too many fingers,mutated,poorly drawn,out of frame,bad hands,lowres,bad anatomy,poorly drawn,cloned face,bad face
+
+#### Sampling Steps(采样迭代步数)：  
+
+AI绘图是有一个过程的：  
+先随机出一个噪声底片 后根据你的提示词和反向提示词一步步调整图片；  
+Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越精细 但是生成时间就会相应增加；  
+所谓 慢工出细活；  
+不过大部分场景 步数一般是20到40之间 超过40后都是肉眼很难区分的细节了；  
+
+#### Sampling method(采样方法)： 
+
+选择AI绘图的风格 具体区别可以自己搜一下 我还没研究出个所以然；
+
+#### Width/Height(宽度/高度)：
+
+图片的尺寸 单位是像素 适当增加可以提高图片的细节 但是相对应的运行成本也会增加；
+
+#### Batch count(生成次数)： 
+
+同样的配置 生成的时候跑几次；
+
+#### Batch size(每次数量)： 
+
+每次生成的图片数量 公式是Batch count\* Batch size = 最终生成的图片数量 比较吃显存；
+
+#### CFG Scale(提示词引导系数)： 
+
+设置图片跟提示词的匹配程度 一般值7～15 太高会降低画质；
+
+
+#### Seed(图像生成种子)： 
+
+一个固定随机数生成器输出的值 以相同参数和随机种子生成的图像会得到相同的结果 适用于使用
+
+
