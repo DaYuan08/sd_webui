@@ -74,8 +74,7 @@ LORA模型下载好后 需要放到项目目录 /stable-diffusion-webui/models/L
 \<lora:lora_name:num\>   
 lora_name：下载的lora模型名称；  
 num：模型占比，适用于使用多个lora模型时 调整单个模型的占比 数字0.1到1;  
-
-如图：  
+eg：  
 <img width="968" alt="image" src="https://user-images.githubusercontent.com/49552459/233819208-c1fb23fe-1c53-4290-85d8-63caa0fdaf8a.png">
 
 选择好模型后 就要开始填写Prompt(提示词)了；
