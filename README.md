@@ -224,7 +224,8 @@ Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越�
 <img width="1726" alt="image" src="https://user-images.githubusercontent.com/49552459/233831051-04610d43-913f-42fa-9f6f-98d307b62aad.png">
 
 拉到页面底下 会有该模型的其他作者的作品 点开一个进入到详情页；  
-详情页拉到底部 会有这张图片生成的参数 一一对应copy到你的webui下面 点击Generate(生成）就可以静候佳音了；  
+详情页拉到底部 会有这张图片生成的配置（使用的模型等 部分模型civitai不维护后不会显示 需要手动在Prompt里面找；  
+其他参数 一一对应copy到你的webui下面 点击Generate(生成）就可以静候佳音了； 
 <img width="1727" alt="image" src="https://user-images.githubusercontent.com/49552459/233831410-42f40b12-c011-4bf0-ac34-5037ee33ba6d.png">
 
 
