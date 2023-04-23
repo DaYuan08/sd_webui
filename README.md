@@ -78,7 +78,7 @@ num：模型占比，适用于使用多个lora模型时 调整单个模型的占
 如图：  
 <img width="968" alt="image" src="https://user-images.githubusercontent.com/49552459/233819208-c1fb23fe-1c53-4290-85d8-63caa0fdaf8a.png">
 
-选择好模型后 就要开始填写Prompt(提示词了 下文以 txt2img + civitai 的作品为例；
+选择好模型后 就要开始填写Prompt(提示词)了；
 
 # txt2img
 
