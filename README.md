@@ -5,7 +5,7 @@
 有需求的 可以先看看官方的教程 有问题可以在本项目底下提issues 有看到会回复.
 官方链接：https://github.com/AUTOMATIC1111/stable-diffusion-webui
 
-##正片开始
+#正片开始
 
 教程设备：MacBook Pro M1 Pro; OS版本：13.3.1
 
@@ -34,15 +34,22 @@ win cmd/mac ter 启动项目后 访问 http://127.0.0.1:7860/ 进入界面；
 
 选项介绍
 txt2img：文生图 根据文字描述生成图片；
-img2img：图生图 顾名思义就是用图片生成图片；
-Extras：高清化 简单理解就是“无损”放大图片用的 提高质量和细节；
-PNG info：图片信息 可以获取由 SD webui 原始生成的png图片，png底下的exif信息里会写入图片生成所使用的参数；
-Checkpoint Merger：模型（ckpt）合并 可以合并不同的模型，生成新的模型
-Train：训练 可以训练自己想要的模型（这个我还在研究 到时候单独出教程
-Settings：设置界面
-Extensions：扩展 插件管理页面
 
-##模型
+img2img：图生图 顾名思义就是用图片生成图片；
+
+Extras：高清化 简单理解就是“无损”放大图片用的 提高质量和细节；
+
+PNG info：图片信息 可以获取由 SD webui 原始生成的png图片，png底下的exif信息里会写入图片生成所使用的参数；
+
+Checkpoint Merger：模型（ckpt）合并 可以合并不同的模型，生成新的模型;
+
+Train：训练 可以训练自己想要的模型;（这个我还在研究 到时候单独出教程
+
+Settings：设置界面;
+
+Extensions：扩展 插件管理页面;
+
+#模型
 
 由界面第一个选项得知 生成图片需要基于模型 所以下文是模型食用教程；
 官方模型库：https://huggingface.co/models
