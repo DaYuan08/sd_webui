@@ -155,7 +155,9 @@ eg：\[cow|horse\] in a field,（牛马混合物 简单解释就是 先按牛生
     + 天气：任何天气 可以带强度 大太阳 暴雨；
   + 其他描述：细节描述词
 
-eg：high quality,（高质量的）realistic,（写实的）1girl, short hair, brown hair, white shirt, brown eyes, heart necklace, breasts, abdomen, ass, legs, high heels, （1个女孩，棕色短发，白色衬衫，棕色眼睛，心形项链，胸部，腹部，臀部，腿，高跟鞋）light smile,（微笑）sitting, looking at viewer, hand on hip,(坐姿，看向观众，单手叉腰）outdoors, cityscape,（在室外，城市背景） 
+eg：high quality,（高质量的）realistic,（写实的）1girl, short hair, brown hair, white shirt, brown eyes, heart necklace, breasts, abdomen, ass, legs, high heels, （1个女孩，棕色短发，白色衬衫，棕色眼睛，心形项链，胸部，腹部，臀部，腿，高跟鞋）light smile,（微笑）sitting, looking at viewer, hand on hip,(坐姿，看向观众，单手叉腰）outdoors, cityscape,（在室外，城市背景）   
+
+具体提示词 可以参考这个网站：https://aitag.top/  
 
 ## Negative prompt(反向提示词)：  
 
