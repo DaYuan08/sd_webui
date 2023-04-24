@@ -179,7 +179,10 @@ Sampling Steps设置的就是调整的步数 步骤越多 每一步调整就越�
 
 ## Sampling method(采样方法)： 
 
-选择AI绘图的风格 具体区别可以自己搜一下 我还没研究出个所以然；
+选择AI绘图的风格 具体区别可以自己搜一下 我还没研究出个所以然；  
+
+下图是相同步数下的绘制时长：  
+ ![image](https://user-images.githubusercontent.com/49552459/233881776-72685d10-721d-4979-855d-63cb270478bd.png)
 
 ## Width/Height(宽度/高度)：
 
